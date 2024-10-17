@@ -26,34 +26,6 @@ function howManyTimes(wordsArray, wordToSearch) {
 
 
 // Iteration 2 | Number Sequence
-/* function createSequence(n) {
-  let numberArray = [];
-  if (n = 0) {
-    numberArray = [];
-  } else {
-      let i = 0;
-      numberArray = [];
-      do {
-        numberArray.push(i)
-        i ++;
-      } while (i <= n)
-    }
-    
-  return numberArray;
-} */
-
-
- /*  function createSequence(n) {
-    let i = 0;
-    let numberArray = [];
-    do {
-      numberArray.push(i)
-      i ++;
-    } while (i <= n)
-      
-    return numberArray;
-  }
- */
   function createSequence(n) {
     let i = 0;
     let numberArray = [];
@@ -95,8 +67,30 @@ function multiplyBy(numArray, factor) {
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut() {}
+function filterOut(arrOriginal, arrFilter) {
+  let filteredArray = [];
+  if (arrOriginal.length === 0) {
+    filteredArray = null;
+  } else if (arrFilter === null) {
+    filteredArray = arrOriginal;
+  } else {
+    for (let i = 0; i < arrOriginal.length; i++) {
+      let match = false;
+      for (let j = 0; j < arrFilter.length; j++) {
+        if (arrOriginal[i] === arrFilter[j]) {
+          match = true;
+          break;
+        }
+      }
+    if (match !== true) {
+      filteredArray.push(arrOriginal[i]);
 
+    }
+
+    }
+  }
+  return filteredArray;
+}
 
 
 
