@@ -115,7 +115,17 @@ const duplicateWords = [
   "bring"
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(arr) {
+  if (arr.length === 0) {
+    return null;
+  }
+  return [...new Set(arr)];
+}
+/* Defined as a function: The function is declared using the function keyword.
+Returns null for empty arrays: If the input array is empty (arr.length === 0), it returns null.
+Correctly uniqifies arrays with the same elements: For arrays with repeated elements (e.g., [1, 1, 1]), it returns a unique array (e.g., [1]).
+Returns the same array for unique elements: If no elements are repeated (e.g., [1, 2, 3]), it returns the original array unchanged.
+Returns a uniquified array: It uses new Set(arr) to remove duplicates, returning the result as an array (e.g., [1, 2, 3] from [1, 2, 2, 3, 3]). */
 
 
 
