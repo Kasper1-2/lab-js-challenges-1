@@ -79,7 +79,14 @@ function howManyTimes(wordsArray, wordToSearch) {
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy() {}
+function multiplyBy(numArray, factor) {
+  const result = [];
+  numArray.forEach(numArray => {
+    result.push(numArray * factor);
+  });
+  return result;
+}
+
 
 
 
