@@ -26,7 +26,52 @@ function howManyTimes(wordsArray, wordToSearch) {
 
 
 // Iteration 2 | Number Sequence
-function createSequence() {}
+/* function createSequence(n) {
+  let numberArray = [];
+  if (n = 0) {
+    numberArray = [];
+  } else {
+      let i = 0;
+      numberArray = [];
+      do {
+        numberArray.push(i)
+        i ++;
+      } while (i <= n)
+    }
+    
+  return numberArray;
+} */
+
+
+ /*  function createSequence(n) {
+    let i = 0;
+    let numberArray = [];
+    do {
+      numberArray.push(i)
+      i ++;
+    } while (i <= n)
+      
+    return numberArray;
+  }
+ */
+  function createSequence(n) {
+    let i = 0;
+    let numberArray = [];
+    if (n === 0) {
+      numberArray = [];
+
+    } else {
+      do {
+        numberArray.push(i)
+        i ++;
+      } while (i <= n)
+    }
+      
+    return numberArray;
+  }
+
+  
+
 
 
 
